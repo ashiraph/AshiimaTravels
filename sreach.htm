@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adventure Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .search-field {
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #e588d4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color:  #e588d4;
+        }
+
+        
+        .placeholder-image {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        .footer button {
+            padding: 10px 20px;
+            margin: 0px;
+            background-color:  #e588d4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-items: center;
+        }
+        .footer {
+            background-color: #e588d4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .activity {
+            margin: 10px;
+            padding: 5px 5px;
+            background-color:  #e588d4;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav a{
+            padding: 10px;
+            margin: 20px;
+           
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px #333;
+        }
+        nav{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            /* top: 20px !important; */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html"><</a>
+        <a href="./navigation.html">></a>
+    </nav>
+    <div class="section">
+        <h1>Explore Your Adventure</h1>
+        <input type="text" id="placesSearch" class="search-field" placeholder="Search places to visit">
+        <button class="btn" onclick="searchPlaces()">Search</button>
+        <h2>Beach</h2>
+        <p>Find beautiful beaches to visit</p>
+        <input type="text" id="beachSearch" class="search-field" placeholder="Search beaches">
+        <button class="btn" onclick="searchBeach()">Search</button>
+        <h2>Accommodation</h2>
+        <p>Discover comfortable accommodations</p>
+        <input type="text" id="accommodationSearch" class="search-field" placeholder="Search accommodations">
+        <button class="btn" onclick="searchAccommodation()">Search</button>
+        <div id="beachResult" style="display: none;">
+            <a href="beach.html"><img src="beach.png" alt="Beach" class="placeholder-image"></a>
+        </div>
+        <div id="accommodationResult" style="display: none;">
+            <a href="accommodation.html"><img src="accommodation-placeholder.jpg" alt="Accommodation" class="placeholder-image"></a>
+        </div>
+    </div>
+
+    <script>
+        function searchPlaces() {
+            // Your logic for searching places to visit
+        }
+
+        function searchBeach() {
+            // Your logic for searching beaches
+            document.getElementById('beachResult').style.display = 'block';
+        }
+
+        function searchAccommodation() {
+            // Your logic for searching accommodations
+            document.getElementById('accommodationResult').style.display = 'block';
+        }
+    </script>
+       <div class="footer">
+        <button>Find</button>
+        <button>Favorite</button>
+        <button>Reservation</button>
+        <button>Messages</button>
+    </div>
+</body>
+</html>

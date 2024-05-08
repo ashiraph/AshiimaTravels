@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Selected Adventure Package</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Web page background color */
+        }
+
+        /* Section styles */
+        .section {
+            background-color: #fff; /* Selected Adventure Package background color */
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Subsection styles */
+        .subsection {
+            margin-top: 20px;
+            background-color: #e9ecef; /* Outgoing Tour Details background color */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Form styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: calc(100% - 10px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Button styles */
+        .btn {
+            padding: 10px 20px;
+            background-color: #e588d4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e588d4;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color:  #e588d4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .selected-package {
+            background-color: #fff; /* Selected Adventure Package background color */
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Outgoing Tour Details subsection styles */
+        .outgoing-details {
+            margin-top: 20px;
+            background-color: #e9ecef; /* Outgoing Tour Details background color */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        .footer button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #e588d4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer button:hover {
+            background-color: #e588d4;
+        }
+        nav a{
+            padding: 10px;
+            margin: 20px;
+           
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px #333;
+        }
+        nav{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            /* top: 20px !important; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Selected Adventure Package Section -->
+    <nav>
+        <a href="./sreach.htm"><</a>
+        <a href="./confirm.html">></a>
+    </nav>
+    <div class="section">
+        <h1>Selected Adventure Package</h1>
+        <!-- Outgoing Tour Details Subsection -->
+        <div class="subsection">
+            <h2>Outgoing Tour Details</h2>
+            <form action="book.php" method="POST">
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="startingPoint">Starting Point:</label>
+                    <input type="text" id="startingPoint" name="startingPoint" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="departureTime">Departure Time:</label>
+                    <input type="time" id="departureTime" name="departureTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="arrivalTime">Arrival Time:</label>
+                    <input type="time" id="arrivalTime" name="arrivalTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="text" id="price" name="price" required>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn">Modify</button>
+                    <button type="button" class="btn">Add Extras</button>
+                </div>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Select Seat Section -->
+    <div class="section">
+        <button class="btn">Select Seat</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button>Find</button>
+        <button>Favorite</button>
+        <button>Reservation</button>
+        <button>Messages</button>
+    </div>
+</body>
+</html>

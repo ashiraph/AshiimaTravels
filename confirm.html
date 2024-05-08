@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Activity Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background for the entire page */
+        }
+
+        /* Section styles */
+        .section {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff; /* White background for sections */
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow for visual depth */
+        }
+
+        /* Subsection styles */
+        .subsection {
+            margin-top: 20px;
+            background-color: #f8f9fa; /* Light gray background for subsections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adding shadow for visual depth */
+        }
+
+        /* Form styles */
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: calc(100% - 10px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group label {
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+
+        /* Button styles */
+        .btn {
+            padding: 10px 20px;
+            background-color: #e588d4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e588d4;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #e588d4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color:#e588d4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer button:hover {
+            background-color: #e588d4;
+        }
+        nav a{
+            padding: 10px;
+            margin: 20px;
+           
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px #333;
+        }
+        nav{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            /* top: 20px !important; */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./navigation.html"><</a>
+        <a href="./backend.html">></a>
+    </nav>
+    <!-- Activity Selection Section -->
+    <div class="section">
+        <h1>Activity Booking</h1>
+        <div class="subsection">
+            <h2>Select Activity</h2>
+            <form action="activity_details.php" method="POST">
+                <div class="form-group">
+                    <label for="activity">Activity:</label>
+                    <select id="activity" name="activity" required>
+                        <option value="hiking">Hiking</option>
+                        <option value="camping">Camping</option>
+                        <option value="beach">Beach</option>
+                        <option value="mountain">Mountain Climbing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="days">Number of Days:</label>
+                    <input type="number" id="days" name="days" min="1" required>
+                </div>
+                <div class="form-group">
+                    <h3>Select Date</h3>
+                    <input type="date" id="activityDate" name="activityDate" required>
+                </div>
+                <div class="form-group">
+                    <h3>Select Time</h3>
+                    <input type="time" id="activityTime" name="activityTime" required>
+                </div>
+                <button type="submit" class="btn">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button>Find</button>
+        <button>Favorite</button>
+        <button>Reservation</button>
+        <button>Messages</button>
+    </div>
+</body>
+</html>

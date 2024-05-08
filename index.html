@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           min-width: 100vw;
+           min-height: 100vh;
+        }
+       
+
+        /* Section 1 */
+        .section-1 {
+            background-color:  #e588d4;
+            padding: 20px;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        /* Section 2 */
+        .section-2 {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Section 3 */
+        .section-3 {
+            background-color: #f4f4f4;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Section 4 */
+        .section-4 {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            /* width: fit-content; */
+        }
+        .section-4 img{
+            width: 50px !important;
+            height: 50px;
+        }
+        .section-4 button{
+            margin-left: 10px;
+        }
+
+        .search-bar {
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            /* border-end-start-radius: 10%; */
+        }
+
+        .activities {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin-top: 20px;
+        }
+
+        .activity {
+            margin: 10px;
+            padding: 5px 5px;
+            background-color:  #e588d4;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        } 
+        .btn {
+            padding: 10px 20px;
+            background-color: #e588d4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+          .btn:hover {
+            background-color:  #e588d4;
+        }
+
+
+        .footer {
+            background-color: #e588d4;
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            
+        }
+
+        .footer button {
+            padding: 10px 20px;
+            margin: 0px;
+            background-color:  #e588d4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section-3 img{
+            width: 200px;
+            border-radius: 10px;
+        }
+        .signinArrow{
+            position: absolute;
+            right:0;
+            box-shadow: 0 2px 5px #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="signinArrow">
+        <a href="./login.html">></a>
+    </div>
+    <!-- Section 1: Business Name -->
+    <div class="section-1">
+        <h1>Ashiima Travels</h1>
+    </div>
+
+    <!-- Section 2: Search Bar -->
+    <div class="section-2">
+        <input type="text" class="search-bar" placeholder="Search destination or activity">
+        <button class="btn" onclick="searchBeach()">Search</button>
+    </div>
+
+  
+    <!-- Section 3: Adventures Await -->
+    <div class="section-3">
+        <h2>Adventures Await</h2>
+        <!-- Adventure Item 1 -->
+        <div class="adventure-item">
+            <img src="hiking2.png" alt="Hiking" class="adventure-image">
+            <div class="adventure-description">
+                <h3>Hiking in the Mountains</h3>
+                <p>Explore scenic trails and breathtaking views.</p>
+            </div>
+        </div>
+        <!-- Adventure Item 2 -->
+        <div class="adventure-item">
+            <img src="camping2.png" alt="Camping" class="adventure-image">
+            <div class="adventure-description">
+                <h3>Camping by the Lake</h3>
+                <p>Experience nature's beauty under the stars.</p>
+            </div>
+        </div>
+    <!-- Section 4: Explore -->
+    <div class="section-4">
+        <h2>Explore</h2>
+        <div class="activities">
+            <!-- Add buttons with icons here -->
+            <button><img src="hiking.png" alt="Hiking"> Hiking</button>
+            <button><img src="camping.png" alt="Camping"> Camping</button>
+            <button><img src="beach.png" alt="Beach"> Beach</button>
+            <button><img src="mountain.png" alt="Mountain"> Mountain</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button>Find</button>
+        <button>Favorite</button>
+        <button>Reservation</button>
+        <button>Messages</button>
+    </div>
+</body>
+</html
